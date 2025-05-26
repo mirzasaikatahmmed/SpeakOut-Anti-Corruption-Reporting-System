@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SpeakOut___Anti_Corruption_Reporting_System
+namespace SpeakOut___Anti_Corruption_Reporting_System.Admin
 {
-    public partial class AdminDashboard : Form
+    public partial class Dashboard : Form
     {
-        public AdminDashboard()
+        public Dashboard()
         {
             InitializeComponent();
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }

@@ -50,11 +50,125 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\AdminUsersManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminUsersManagement.Designer.cs">
+      <DependentUpon>AdminUsersManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminNotificationLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminNotificationLog.Designer.cs">
+      <DependentUpon>AdminNotificationLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminReportHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminReportHistory.Designer.cs">
+      <DependentUpon>AdminReportHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminInvestigatorsManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminInvestigatorsManagement.Designer.cs">
+      <DependentUpon>AdminInvestigatorsManagement.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin\AdminDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Admin\AdminDashboard.Designer.cs">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminAssignReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminAssignReports.Designer.cs">
+      <DependentUpon>AdminAssignReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminViewAllReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminViewAllReports.Designer.cs">
+      <DependentUpon>AdminViewAllReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reporter\Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporter\Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reporter\ReporterComments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporter\ReporterComments.Designer.cs">
+      <DependentUpon>ReporterComments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reporter\ReporterMySubmittedEvidence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporter\ReporterMySubmittedEvidence.Designer.cs">
+      <DependentUpon>ReporterMySubmittedEvidence.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reporter\ReporterReportStatusTracker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporter\ReporterReportStatusTracker.Designer.cs">
+      <DependentUpon>ReporterReportStatusTracker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reporter\ReporterMyReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporter\ReporterMyReports.Designer.cs">
+      <DependentUpon>ReporterMyReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reporter\ReporterSubmitNewReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporter\ReporterSubmitNewReport.Designer.cs">
+      <DependentUpon>ReporterSubmitNewReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Investigator\InvestigatorProgressHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Investigator\InvestigatorProgressHistory.Designer.cs">
+      <DependentUpon>InvestigatorProgressHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Investigator\InvestigatorUploadEvidence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Investigator\InvestigatorUploadEvidence.Designer.cs">
+      <DependentUpon>InvestigatorUploadEvidence.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Investigator\InvestigatorComments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Investigator\InvestigatorComments.Designer.cs">
+      <DependentUpon>InvestigatorComments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Investigator\InvestigatorReviewReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Investigator\InvestigatorReviewReport.Designer.cs">
+      <DependentUpon>InvestigatorReviewReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Investigator\InvestigatorMyAssignedReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Investigator\InvestigatorMyAssignedReports.Designer.cs">
+      <DependentUpon>InvestigatorMyAssignedReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Investigator\Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Investigator\Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
     <Compile Include="Investigator\InvestigatorDashboard.cs">
       <SubType>Form</SubType>
@@ -87,6 +201,69 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>SpeakOutAntiCorruptionDBDataSet.xsd</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Admin\AdminUsersManagement.resx">
+      <DependentUpon>AdminUsersManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\AdminNotificationLog.resx">
+      <DependentUpon>AdminNotificationLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\AdminReportHistory.resx">
+      <DependentUpon>AdminReportHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\AdminInvestigatorsManagement.resx">
+      <DependentUpon>AdminInvestigatorsManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\AdminDashboard.resx">
+      <DependentUpon>AdminDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\AdminAssignReports.resx">
+      <DependentUpon>AdminAssignReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\AdminViewAllReports.resx">
+      <DependentUpon>AdminViewAllReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporter\Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporter\ReporterComments.resx">
+      <DependentUpon>ReporterComments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporter\ReporterMySubmittedEvidence.resx">
+      <DependentUpon>ReporterMySubmittedEvidence.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporter\ReporterReportStatusTracker.resx">
+      <DependentUpon>ReporterReportStatusTracker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporter\ReporterMyReports.resx">
+      <DependentUpon>ReporterMyReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporter\ReporterSubmitNewReport.resx">
+      <DependentUpon>ReporterSubmitNewReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Investigator\InvestigatorProgressHistory.resx">
+      <DependentUpon>InvestigatorProgressHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Investigator\InvestigatorUploadEvidence.resx">
+      <DependentUpon>InvestigatorUploadEvidence.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Investigator\InvestigatorComments.resx">
+      <DependentUpon>InvestigatorComments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Investigator\InvestigatorReviewReport.resx">
+      <DependentUpon>InvestigatorReviewReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Investigator\InvestigatorMyAssignedReports.resx">
+      <DependentUpon>InvestigatorMyAssignedReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Investigator\Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Investigator\InvestigatorDashboard.resx">
+      <DependentUpon>InvestigatorDashboard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -102,6 +279,9 @@
     </Compile>
     <EmbeddedResource Include="Registration.resx">
       <DependentUpon>Registration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporter\ReporterDashboard.resx">
+      <DependentUpon>ReporterDashboard.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -136,6 +316,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\padlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dashboard.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
