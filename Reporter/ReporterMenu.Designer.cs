@@ -1,6 +1,6 @@
 ﻿namespace SpeakOut___Anti_Corruption_Reporting_System
 {
-    partial class ReporterDashboard
+    partial class ReporterMenu
     {
         /// <summary>
         /// Required designer variable.

@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SpeakOut___Anti_Corruption_Reporting_System.Investigator
+namespace SpeakOut___Anti_Corruption_Reporting_System
 {
-    public partial class Dashboard : Form
+    public partial class ReporterMenu : Form
     {
-        public Dashboard()
+        public ReporterMenu()
         {
             InitializeComponent();
         }

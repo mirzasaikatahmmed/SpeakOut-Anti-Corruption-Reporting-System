@@ -81,19 +81,19 @@ namespace SpeakOut___Anti_Corruption_Reporting_System
 
                     if (role == "Admin")
                     {
-                        AdminDashboard admin = new AdminDashboard();
+                        AdminMenu admin = new AdminMenu();
                         admin.Show();
                         this.Hide();
                     }
                     else if (role == "Investigator")
                     {
-                        InvestigatorDashboard investigator = new InvestigatorDashboard();
+                        InvestigatorMenu investigator = new InvestigatorMenu();
                         investigator.Show();
                         this.Hide();
                     }
                     else if (role == "Reporter")
                     {
-                        ReporterDashboard reporter = new ReporterDashboard();
+                        ReporterMenu reporter = new ReporterMenu();
                         reporter.Show();
                         this.Hide();
                     }

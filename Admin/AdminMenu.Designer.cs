@@ -1,6 +1,6 @@
 ﻿namespace SpeakOut___Anti_Corruption_Reporting_System
 {
-    partial class AdminDashboard
+    partial class AdminMenu
     {
         /// <summary>
         /// Required designer variable.
@@ -73,6 +73,7 @@
             this.ACLOSEBTN.TabIndex = 4;
             this.ACLOSEBTN.Text = "X";
             this.ACLOSEBTN.UseVisualStyleBackColor = true;
+            this.ACLOSEBTN.Click += new System.EventHandler(this.ACLOSEBTN_Click);
             // 
             // label1
             // 
@@ -124,6 +125,7 @@
             this.adminLogoutBTN.TabIndex = 10;
             this.adminLogoutBTN.Text = "🚪 Logout";
             this.adminLogoutBTN.UseVisualStyleBackColor = true;
+            this.adminLogoutBTN.Click += new System.EventHandler(this.adminLogoutBTN_Click);
             // 
             // adminUserManagementBTN
             // 
@@ -135,6 +137,7 @@
             this.adminUserManagementBTN.TabIndex = 9;
             this.adminUserManagementBTN.Text = "👤 User";
             this.adminUserManagementBTN.UseVisualStyleBackColor = true;
+            this.adminUserManagementBTN.Click += new System.EventHandler(this.adminUserManagementBTN_Click);
             // 
             // adminNotificationLogBTN
             // 
@@ -201,6 +204,7 @@
             this.adminDashboardBTN.TabIndex = 3;
             this.adminDashboardBTN.Text = "🏠 Dashboard";
             this.adminDashboardBTN.UseVisualStyleBackColor = true;
+            this.adminDashboardBTN.Click += new System.EventHandler(this.adminDashboardBTN_Click);
             // 
             // pictureBox2
             // 
@@ -220,7 +224,7 @@
             this.adminPanel.Size = new System.Drawing.Size(550, 485);
             this.adminPanel.TabIndex = 2;
             // 
-            // AdminDashboard
+            // AdminMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -230,7 +234,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "AdminDashboard";
+            this.Name = "AdminMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdminDashboard";
             this.panel1.ResumeLayout(false);
