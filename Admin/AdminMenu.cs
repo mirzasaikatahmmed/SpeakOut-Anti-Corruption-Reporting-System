@@ -39,7 +39,7 @@ namespace SpeakOut___Anti_Corruption_Reporting_System
 
         private void adminDashboardBTN_Click(object sender, EventArgs e)
         {
-
+            LoadFormInPanel(new Admin.AdminDashboard());
         }
 
         private void ACLOSEBTN_Click(object sender, EventArgs e)
@@ -62,6 +62,26 @@ namespace SpeakOut___Anti_Corruption_Reporting_System
         private void adminManageInvestigatorsBTN_Click(object sender, EventArgs e)
         {
             LoadFormInPanel(new Admin.AdminInvestigatorsManagement());
+        }
+
+        private void adminAllReportBTN_Click(object sender, EventArgs e)
+        {
+            LoadFormInPanel(new Admin.AdminViewAllReports());
+        }
+
+        private void assignReportBTN_Click(object sender, EventArgs e)
+        {
+            LoadFormInPanel(new Admin.AdminAssignReports());
+        }
+
+        private void adminReportHistoryBTN_Click(object sender, EventArgs e)
+        {
+            LoadFormInPanel(new Admin.AdminReportHistory());
+        }
+
+        private void adminNotificationLogBTN_Click(object sender, EventArgs e)
+        {
+            LoadFormInPanel(new Admin.AdminNotificationLog());
         }
     }
 }

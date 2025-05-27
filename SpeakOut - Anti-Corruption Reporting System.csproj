@@ -62,6 +62,12 @@
     <Compile Include="Admin\AdminAddUser.Designer.cs">
       <DependentUpon>AdminAddUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="Admin\AdminAssignReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminAssignReports.Designer.cs">
+      <DependentUpon>AdminAssignReports.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin\AdminDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,11 +86,29 @@
     <Compile Include="Admin\AdminMenu.Designer.cs">
       <DependentUpon>AdminMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Admin\AdminNotificationLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminNotificationLog.Designer.cs">
+      <DependentUpon>AdminNotificationLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminReportHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminReportHistory.Designer.cs">
+      <DependentUpon>AdminReportHistory.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin\AdminUserManagement.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Admin\AdminUserManagement.Designer.cs">
       <DependentUpon>AdminUserManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminViewAllReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminViewAllReports.Designer.cs">
+      <DependentUpon>AdminViewAllReports.cs</DependentUpon>
     </Compile>
     <Compile Include="Investigator\InvestigatorMenu.cs">
       <SubType>Form</SubType>
@@ -123,6 +147,9 @@
     <EmbeddedResource Include="Admin\AdminAddUser.resx">
       <DependentUpon>AdminAddUser.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Admin\AdminAssignReports.resx">
+      <DependentUpon>AdminAssignReports.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Admin\AdminDashboard.resx">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -132,8 +159,17 @@
     <EmbeddedResource Include="Admin\AdminMenu.resx">
       <DependentUpon>AdminMenu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Admin\AdminNotificationLog.resx">
+      <DependentUpon>AdminNotificationLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\AdminReportHistory.resx">
+      <DependentUpon>AdminReportHistory.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Admin\AdminUserManagement.resx">
       <DependentUpon>AdminUserManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\AdminViewAllReports.resx">
+      <DependentUpon>AdminViewAllReports.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Investigator\InvestigatorMenu.resx">
       <DependentUpon>InvestigatorMenu.cs</DependentUpon>

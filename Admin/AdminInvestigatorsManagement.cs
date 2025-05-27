@@ -46,7 +46,8 @@ namespace SpeakOut___Anti_Corruption_Reporting_System.Admin
 
         private void addUser_Click(object sender, EventArgs e)
         {
-
+            AdminAddInvestigator adminAddInvestigatorForm = new AdminAddInvestigator();
+            adminAddInvestigatorForm.ShowDialog();
         }
 
         private void updateUser_Click(object sender, EventArgs e)
