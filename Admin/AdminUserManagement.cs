@@ -24,7 +24,7 @@ namespace SpeakOut___Anti_Corruption_Reporting_System.Admin
         private void BindGridView()
         {
             SqlConnection con = new SqlConnection(cs);
-            string query = "SELECT UserId, Name, Email, Role, CreatedAt FROM Users";
+            string query = "SELECT UserId, Name, Email, Role, CreatedAt FROM Users WHERE Role = 'Reporter'";
             SqlDataAdapter sda = new SqlDataAdapter(query, con);
             DataTable dt = new DataTable();
             sda.Fill(dt);
@@ -33,8 +33,11 @@ namespace SpeakOut___Anti_Corruption_Reporting_System.Admin
             userDataGridView.Columns["UserId"].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
             userDataGridView.Columns["Name"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             userDataGridView.Columns["Email"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            userDataGridView.Columns["Role"].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-
+          
+            if (userDataGridView.Columns.Contains("Role"))
+            {
+                userDataGridView.Columns["Role"].Visible = false;
+            }
             if (userDataGridView.Columns.Contains("CreatedAt"))
             {
                 userDataGridView.Columns["CreatedAt"].Visible = false;

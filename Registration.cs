@@ -90,5 +90,10 @@ namespace SpeakOut___Anti_Corruption_Reporting_System
         {
             Application.Exit();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

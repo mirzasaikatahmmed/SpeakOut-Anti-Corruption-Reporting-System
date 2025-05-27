@@ -108,5 +108,10 @@ namespace SpeakOut___Anti_Corruption_Reporting_System
                 }
             }
         }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

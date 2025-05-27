@@ -50,6 +50,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\AdminAddInvestigator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminAddInvestigator.Designer.cs">
+      <DependentUpon>AdminAddInvestigator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminAddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminAddUser.Designer.cs">
+      <DependentUpon>AdminAddUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin\AdminDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,6 +117,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>SpeakOutAntiCorruptionDBDataSet.xsd</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Admin\AdminAddInvestigator.resx">
+      <DependentUpon>AdminAddInvestigator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\AdminAddUser.resx">
+      <DependentUpon>AdminAddUser.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Admin\AdminDashboard.resx">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -175,6 +193,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\dashboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

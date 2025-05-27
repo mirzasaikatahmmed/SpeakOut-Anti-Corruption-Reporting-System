@@ -31,28 +31,28 @@
             this.panel21 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.rPasswordTextBox = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.rLoginBTN = new System.Windows.Forms.Button();
             this.rRegistrationBTN = new System.Windows.Forms.Button();
             this.panel41 = new System.Windows.Forms.Panel();
             this.rEmailTextBox = new System.Windows.Forms.TextBox();
-            this.pictureBox31 = new System.Windows.Forms.PictureBox();
             this.panel31 = new System.Windows.Forms.Panel();
             this.rNameTextBox = new System.Windows.Forms.TextBox();
-            this.pictureBox21 = new System.Windows.Forms.PictureBox();
             this.label21 = new System.Windows.Forms.Label();
             this.RCLOSEBTN = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox31 = new System.Windows.Forms.PictureBox();
+            this.pictureBox21 = new System.Windows.Forms.PictureBox();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.panel21.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel41.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).BeginInit();
             this.panel31.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
             this.panel11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             this.SuspendLayout();
             // 
@@ -93,16 +93,6 @@
             this.rPasswordTextBox.TabIndex = 3;
             this.rPasswordTextBox.Text = "Password";
             this.rPasswordTextBox.UseSystemPasswordChar = true;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::SpeakOut___Anti_Corruption_Reporting_System.Properties.Resources.padlock;
-            this.pictureBox1.Location = new System.Drawing.Point(15, 11);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
             // 
             // rLoginBTN
             // 
@@ -155,16 +145,6 @@
             this.rEmailTextBox.TabIndex = 4;
             this.rEmailTextBox.Text = "Email";
             // 
-            // pictureBox31
-            // 
-            this.pictureBox31.Image = global::SpeakOut___Anti_Corruption_Reporting_System.Properties.Resources.user;
-            this.pictureBox31.Location = new System.Drawing.Point(15, 11);
-            this.pictureBox31.Name = "pictureBox31";
-            this.pictureBox31.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox31.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox31.TabIndex = 3;
-            this.pictureBox31.TabStop = false;
-            // 
             // panel31
             // 
             this.panel31.BackColor = System.Drawing.Color.White;
@@ -186,16 +166,6 @@
             this.rNameTextBox.Size = new System.Drawing.Size(370, 25);
             this.rNameTextBox.TabIndex = 3;
             this.rNameTextBox.Text = "Name";
-            // 
-            // pictureBox21
-            // 
-            this.pictureBox21.Image = global::SpeakOut___Anti_Corruption_Reporting_System.Properties.Resources.user;
-            this.pictureBox21.Location = new System.Drawing.Point(15, 11);
-            this.pictureBox21.Name = "pictureBox21";
-            this.pictureBox21.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox21.TabIndex = 2;
-            this.pictureBox21.TabStop = false;
             // 
             // label21
             // 
@@ -247,6 +217,37 @@
             this.panel11.Size = new System.Drawing.Size(300, 530);
             this.panel11.TabIndex = 2;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::SpeakOut___Anti_Corruption_Reporting_System.Properties.Resources.padlock;
+            this.pictureBox1.Location = new System.Drawing.Point(15, 11);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // pictureBox31
+            // 
+            this.pictureBox31.Image = global::SpeakOut___Anti_Corruption_Reporting_System.Properties.Resources.user;
+            this.pictureBox31.Location = new System.Drawing.Point(15, 11);
+            this.pictureBox31.Name = "pictureBox31";
+            this.pictureBox31.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox31.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox31.TabIndex = 3;
+            this.pictureBox31.TabStop = false;
+            // 
+            // pictureBox21
+            // 
+            this.pictureBox21.Image = global::SpeakOut___Anti_Corruption_Reporting_System.Properties.Resources.user;
+            this.pictureBox21.Location = new System.Drawing.Point(15, 11);
+            this.pictureBox21.Name = "pictureBox21";
+            this.pictureBox21.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox21.TabIndex = 2;
+            this.pictureBox21.TabStop = false;
+            // 
             // pictureBox11
             // 
             this.pictureBox11.Image = global::SpeakOut___Anti_Corruption_Reporting_System.Properties.Resources._24_hours_service;
@@ -273,15 +274,15 @@
             this.panel21.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel41.ResumeLayout(false);
             this.panel41.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).EndInit();
             this.panel31.ResumeLayout(false);
             this.panel31.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             this.ResumeLayout(false);
 
