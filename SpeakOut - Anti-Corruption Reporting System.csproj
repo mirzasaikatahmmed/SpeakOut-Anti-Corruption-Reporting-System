@@ -50,6 +50,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\AdminDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminDashboard.Designer.cs">
+      <DependentUpon>AdminDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminInvestigatorsManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminInvestigatorsManagement.Designer.cs">
+      <DependentUpon>AdminInvestigatorsManagement.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin\AdminMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +105,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>SpeakOutAntiCorruptionDBDataSet.xsd</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Admin\AdminDashboard.resx">
+      <DependentUpon>AdminDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\AdminInvestigatorsManagement.resx">
+      <DependentUpon>AdminInvestigatorsManagement.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Admin\AdminMenu.resx">
       <DependentUpon>AdminMenu.cs</DependentUpon>
     </EmbeddedResource>

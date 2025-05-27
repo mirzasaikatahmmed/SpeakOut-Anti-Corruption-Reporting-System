@@ -58,5 +58,10 @@ namespace SpeakOut___Anti_Corruption_Reporting_System
                 this.Close();
             }
         }
+
+        private void adminManageInvestigatorsBTN_Click(object sender, EventArgs e)
+        {
+            LoadFormInPanel(new Admin.AdminInvestigatorsManagement());
+        }
     }
 }
