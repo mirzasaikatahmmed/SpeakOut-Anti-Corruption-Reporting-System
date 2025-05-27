@@ -14,7 +14,6 @@ namespace SpeakOut___Anti_Corruption_Reporting_System
 {
     public partial class Login : Form
     {
-        string cs = ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString;
         public Login()
         {
             InitializeComponent();
