@@ -31,7 +31,9 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.ACLOSEBTN = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.adminPanel = new System.Windows.Forms.Panel();
+            this.reporterPanel = new System.Windows.Forms.Panel();
             this.reporterLogoutBTN = new System.Windows.Forms.Button();
             this.reporterCommentsBTN = new System.Windows.Forms.Button();
             this.reporterMySubmittedEvidenceBTN = new System.Windows.Forms.Button();
@@ -40,14 +42,12 @@
             this.reporterSubmitNewReportBTN = new System.Windows.Forms.Button();
             this.reporterDashboardBTN = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.adminPanel.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -86,14 +86,32 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "SpeakOut - Anti-Corruption Reporting System";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::SpeakOut___Anti_Corruption_Reporting_System.Properties.Resources._24_hours_service;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 9);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(28, 28);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // adminPanel
             // 
-            this.adminPanel.Controls.Add(this.panel3);
+            this.adminPanel.Controls.Add(this.reporterPanel);
             this.adminPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.adminPanel.Location = new System.Drawing.Point(200, 45);
             this.adminPanel.Name = "adminPanel";
             this.adminPanel.Size = new System.Drawing.Size(550, 485);
             this.adminPanel.TabIndex = 6;
+            // 
+            // reporterPanel
+            // 
+            this.reporterPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.reporterPanel.Location = new System.Drawing.Point(0, 0);
+            this.reporterPanel.Name = "reporterPanel";
+            this.reporterPanel.Size = new System.Drawing.Size(550, 485);
+            this.reporterPanel.TabIndex = 7;
             // 
             // reporterLogoutBTN
             // 
@@ -105,6 +123,7 @@
             this.reporterLogoutBTN.TabIndex = 10;
             this.reporterLogoutBTN.Text = "🚪 Logout";
             this.reporterLogoutBTN.UseVisualStyleBackColor = true;
+            this.reporterLogoutBTN.Click += new System.EventHandler(this.reporterLogoutBTN_Click);
             // 
             // reporterCommentsBTN
             // 
@@ -116,6 +135,7 @@
             this.reporterCommentsBTN.TabIndex = 8;
             this.reporterCommentsBTN.Text = "💬 Comments";
             this.reporterCommentsBTN.UseVisualStyleBackColor = true;
+            this.reporterCommentsBTN.Click += new System.EventHandler(this.reporterCommentsBTN_Click);
             // 
             // reporterMySubmittedEvidenceBTN
             // 
@@ -127,6 +147,7 @@
             this.reporterMySubmittedEvidenceBTN.TabIndex = 7;
             this.reporterMySubmittedEvidenceBTN.Text = "📎 My Submitted Evidence";
             this.reporterMySubmittedEvidenceBTN.UseVisualStyleBackColor = true;
+            this.reporterMySubmittedEvidenceBTN.Click += new System.EventHandler(this.reporterMySubmittedEvidenceBTN_Click);
             // 
             // reporterReportStatusTracker
             // 
@@ -138,6 +159,7 @@
             this.reporterReportStatusTracker.TabIndex = 6;
             this.reporterReportStatusTracker.Text = "📊 Report Status Tracker";
             this.reporterReportStatusTracker.UseVisualStyleBackColor = true;
+            this.reporterReportStatusTracker.Click += new System.EventHandler(this.reporterReportStatusTracker_Click);
             // 
             // reporterMyReportsBTN
             // 
@@ -149,6 +171,7 @@
             this.reporterMyReportsBTN.TabIndex = 5;
             this.reporterMyReportsBTN.Text = "📁 My Reports";
             this.reporterMyReportsBTN.UseVisualStyleBackColor = true;
+            this.reporterMyReportsBTN.Click += new System.EventHandler(this.reporterMyReportsBTN_Click);
             // 
             // reporterSubmitNewReportBTN
             // 
@@ -160,6 +183,7 @@
             this.reporterSubmitNewReportBTN.TabIndex = 4;
             this.reporterSubmitNewReportBTN.Text = "📝 Submit New Report\t";
             this.reporterSubmitNewReportBTN.UseVisualStyleBackColor = true;
+            this.reporterSubmitNewReportBTN.Click += new System.EventHandler(this.reporterSubmitNewReportBTN_Click);
             // 
             // reporterDashboardBTN
             // 
@@ -171,6 +195,7 @@
             this.reporterDashboardBTN.TabIndex = 3;
             this.reporterDashboardBTN.Text = "🏠 Dashboard";
             this.reporterDashboardBTN.UseVisualStyleBackColor = true;
+            this.reporterDashboardBTN.Click += new System.EventHandler(this.reporterDashboardBTN_Click);
             // 
             // panel2
             // 
@@ -189,14 +214,6 @@
             this.panel2.Size = new System.Drawing.Size(200, 485);
             this.panel2.TabIndex = 5;
             // 
-            // panel3
-            // 
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(550, 485);
-            this.panel3.TabIndex = 7;
-            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::SpeakOut___Anti_Corruption_Reporting_System.Properties.Resources.dashboard;
@@ -207,17 +224,7 @@
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::SpeakOut___Anti_Corruption_Reporting_System.Properties.Resources._24_hours_service;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 9);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(28, 28);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // ReporterDashboard
+            // ReporterMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -227,15 +234,15 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "ReporterDashboard";
+            this.Name = "ReporterMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ReporterDashboard";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.adminPanel.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -256,6 +263,6 @@
         private System.Windows.Forms.Button reporterDashboardBTN;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel reporterPanel;
     }
 }

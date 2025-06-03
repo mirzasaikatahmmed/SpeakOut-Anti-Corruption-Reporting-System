@@ -32,7 +32,7 @@
             this.ACLOSEBTN = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.adminPanel = new System.Windows.Forms.Panel();
+            this.investigatorPanel = new System.Windows.Forms.Panel();
             this.investigatorLogoutBTN = new System.Windows.Forms.Button();
             this.investigatorProgressHistoryBTN = new System.Windows.Forms.Button();
             this.investigatorCommentsBTN = new System.Windows.Forms.Button();
@@ -94,13 +94,13 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // adminPanel
+            // investigatorPanel
             // 
-            this.adminPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.adminPanel.Location = new System.Drawing.Point(200, 45);
-            this.adminPanel.Name = "adminPanel";
-            this.adminPanel.Size = new System.Drawing.Size(550, 485);
-            this.adminPanel.TabIndex = 4;
+            this.investigatorPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.investigatorPanel.Location = new System.Drawing.Point(200, 45);
+            this.investigatorPanel.Name = "investigatorPanel";
+            this.investigatorPanel.Size = new System.Drawing.Size(550, 485);
+            this.investigatorPanel.TabIndex = 4;
             // 
             // investigatorLogoutBTN
             // 
@@ -112,6 +112,7 @@
             this.investigatorLogoutBTN.TabIndex = 10;
             this.investigatorLogoutBTN.Text = "🚪 Logout";
             this.investigatorLogoutBTN.UseVisualStyleBackColor = true;
+            this.investigatorLogoutBTN.Click += new System.EventHandler(this.investigatorLogoutBTN_Click);
             // 
             // investigatorProgressHistoryBTN
             // 
@@ -123,6 +124,7 @@
             this.investigatorProgressHistoryBTN.TabIndex = 8;
             this.investigatorProgressHistoryBTN.Text = "📊 Progress History\t";
             this.investigatorProgressHistoryBTN.UseVisualStyleBackColor = true;
+            this.investigatorProgressHistoryBTN.Click += new System.EventHandler(this.investigatorProgressHistoryBTN_Click);
             // 
             // investigatorCommentsBTN
             // 
@@ -134,6 +136,7 @@
             this.investigatorCommentsBTN.TabIndex = 7;
             this.investigatorCommentsBTN.Text = "💬 Comments";
             this.investigatorCommentsBTN.UseVisualStyleBackColor = true;
+            this.investigatorCommentsBTN.Click += new System.EventHandler(this.investigatorCommentsBTN_Click);
             // 
             // investigatorUploadEvidenceBTN
             // 
@@ -145,6 +148,7 @@
             this.investigatorUploadEvidenceBTN.TabIndex = 6;
             this.investigatorUploadEvidenceBTN.Text = "📤 Upload Evidence";
             this.investigatorUploadEvidenceBTN.UseVisualStyleBackColor = true;
+            this.investigatorUploadEvidenceBTN.Click += new System.EventHandler(this.investigatorUploadEvidenceBTN_Click);
             // 
             // investigatorReviewReportBTN
             // 
@@ -156,6 +160,7 @@
             this.investigatorReviewReportBTN.TabIndex = 5;
             this.investigatorReviewReportBTN.Text = "🔍 Review Report";
             this.investigatorReviewReportBTN.UseVisualStyleBackColor = true;
+            this.investigatorReviewReportBTN.Click += new System.EventHandler(this.investigatorReviewReportBTN_Click);
             // 
             // investigatorMyAssignedReportsBTN
             // 
@@ -167,6 +172,7 @@
             this.investigatorMyAssignedReportsBTN.TabIndex = 4;
             this.investigatorMyAssignedReportsBTN.Text = "📂 My Reports";
             this.investigatorMyAssignedReportsBTN.UseVisualStyleBackColor = true;
+            this.investigatorMyAssignedReportsBTN.Click += new System.EventHandler(this.investigatorMyAssignedReportsBTN_Click);
             // 
             // investigatorDashboardBTN
             // 
@@ -178,6 +184,7 @@
             this.investigatorDashboardBTN.TabIndex = 3;
             this.investigatorDashboardBTN.Text = "🏠 Dashboard";
             this.investigatorDashboardBTN.UseVisualStyleBackColor = true;
+            this.investigatorDashboardBTN.Click += new System.EventHandler(this.investigatorDashboardBTN_Click);
             // 
             // pictureBox2
             // 
@@ -206,17 +213,17 @@
             this.panel2.Size = new System.Drawing.Size(200, 485);
             this.panel2.TabIndex = 3;
             // 
-            // InvestigatorDashboard
+            // InvestigatorMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(750, 530);
             this.ControlBox = false;
-            this.Controls.Add(this.adminPanel);
+            this.Controls.Add(this.investigatorPanel);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "InvestigatorDashboard";
+            this.Name = "InvestigatorMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "InvestigatorDashboard";
             this.panel1.ResumeLayout(false);
@@ -234,7 +241,7 @@
         private System.Windows.Forms.Button ACLOSEBTN;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel adminPanel;
+        private System.Windows.Forms.Panel investigatorPanel;
         private System.Windows.Forms.Button investigatorLogoutBTN;
         private System.Windows.Forms.Button investigatorProgressHistoryBTN;
         private System.Windows.Forms.Button investigatorCommentsBTN;
