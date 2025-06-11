@@ -60,5 +60,30 @@ namespace SpeakOut___Anti_Corruption_Reporting_System.Admin
             BindGridView();
             MessageBox.Show("Data Refresh Successful");
         }
+
+        private void userDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

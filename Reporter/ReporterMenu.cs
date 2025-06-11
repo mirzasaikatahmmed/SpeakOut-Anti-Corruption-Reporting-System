@@ -12,9 +12,16 @@ namespace SpeakOut___Anti_Corruption_Reporting_System
 {
     public partial class ReporterMenu : Form
     {
+        private int currentUserId;
         public ReporterMenu()
         {
             InitializeComponent();
+        }
+
+        public ReporterMenu(int userId)
+        {
+            InitializeComponent();
+            currentUserId = userId;
         }
 
         private void LoadFormInPanel(Form form)
@@ -34,12 +41,12 @@ namespace SpeakOut___Anti_Corruption_Reporting_System
 
         private void reporterSubmitNewReportBTN_Click(object sender, EventArgs e)
         {
-            LoadFormInPanel(new Reporter.ReporterSubmitNewReport());
+            LoadFormInPanel(new Reporter.ReporterSubmitNewReport(currentUserId));
         }
 
         private void reporterMyReportsBTN_Click(object sender, EventArgs e)
         {
-            LoadFormInPanel(new Reporter.ReporterMyReports());
+            LoadFormInPanel(new Reporter.ReporterMyReports(currentUserId));
         }
 
         private void reporterReportStatusTracker_Click(object sender, EventArgs e)

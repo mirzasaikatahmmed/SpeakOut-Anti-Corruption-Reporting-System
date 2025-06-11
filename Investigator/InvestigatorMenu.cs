@@ -12,9 +12,16 @@ namespace SpeakOut___Anti_Corruption_Reporting_System
 {
     public partial class InvestigatorMenu : Form
     {
+        private int currentUserId;
         public InvestigatorMenu()
         {
             InitializeComponent();
+        }
+        
+        public InvestigatorMenu(int userId)
+        {
+            InitializeComponent();
+            currentUserId = userId;
         }
 
         private void LoadFormInPanel(Form form)

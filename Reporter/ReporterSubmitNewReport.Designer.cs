@@ -30,6 +30,7 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.evidenceListBox = new System.Windows.Forms.ListBox();
             this.submitNone = new System.Windows.Forms.CheckBox();
             this.submitAnonymously = new System.Windows.Forms.CheckBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -50,7 +51,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.backPictureBoxBTN = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.evidenceListBox = new System.Windows.Forms.ListBox();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -91,6 +91,15 @@
             this.panel3.Size = new System.Drawing.Size(520, 425);
             this.panel3.TabIndex = 1;
             // 
+            // evidenceListBox
+            // 
+            this.evidenceListBox.FormattingEnabled = true;
+            this.evidenceListBox.ItemHeight = 16;
+            this.evidenceListBox.Location = new System.Drawing.Point(7, 356);
+            this.evidenceListBox.Name = "evidenceListBox";
+            this.evidenceListBox.Size = new System.Drawing.Size(345, 52);
+            this.evidenceListBox.TabIndex = 25;
+            // 
             // submitNone
             // 
             this.submitNone.AutoSize = true;
@@ -100,6 +109,7 @@
             this.submitNone.TabIndex = 24;
             this.submitNone.Text = "None";
             this.submitNone.UseVisualStyleBackColor = true;
+            this.submitNone.CheckedChanged += new System.EventHandler(this.submitNone_CheckedChanged);
             // 
             // submitAnonymously
             // 
@@ -110,6 +120,7 @@
             this.submitAnonymously.TabIndex = 23;
             this.submitAnonymously.Text = "Anonymously";
             this.submitAnonymously.UseVisualStyleBackColor = true;
+            this.submitAnonymously.CheckedChanged += new System.EventHandler(this.submitAnonymously_CheckedChanged);
             // 
             // label8
             // 
@@ -273,6 +284,7 @@
             this.newReportSubmitBTN.TabIndex = 8;
             this.newReportSubmitBTN.Text = "Submit";
             this.newReportSubmitBTN.UseVisualStyleBackColor = false;
+            this.newReportSubmitBTN.Click += new System.EventHandler(this.newReportSubmitBTN_Click);
             // 
             // panel2
             // 
@@ -303,15 +315,6 @@
             this.label1.Size = new System.Drawing.Size(163, 19);
             this.label1.TabIndex = 0;
             this.label1.Text = "Submit New Report";
-            // 
-            // evidenceListBox
-            // 
-            this.evidenceListBox.FormattingEnabled = true;
-            this.evidenceListBox.ItemHeight = 16;
-            this.evidenceListBox.Location = new System.Drawing.Point(7, 356);
-            this.evidenceListBox.Name = "evidenceListBox";
-            this.evidenceListBox.Size = new System.Drawing.Size(345, 52);
-            this.evidenceListBox.TabIndex = 25;
             // 
             // ReporterSubmitNewReport
             // 

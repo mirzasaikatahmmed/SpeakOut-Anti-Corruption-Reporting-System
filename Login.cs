@@ -64,7 +64,7 @@ namespace SpeakOut___Anti_Corruption_Reporting_System
             string cs = ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString;
             using (SqlConnection con = new SqlConnection(cs))
             {
-                string query = "SELECT Role FROM Users WHERE Email = @email AND PasswordHash = @password";
+                string query = "SELECT UserId, Role FROM Users WHERE Email = @email AND PasswordHash = @password";
                 SqlCommand cmd = new SqlCommand(query, con);
                 cmd.Parameters.AddWithValue("@email", email);
                 cmd.Parameters.AddWithValue("@password", password);
@@ -74,25 +74,26 @@ namespace SpeakOut___Anti_Corruption_Reporting_System
                 if (dr.HasRows)
                 {
                     dr.Read();
-                    string role = dr.GetString(0);
+                    int userId = dr.GetInt32(0);
+                    string role = dr.GetString(1);
 
                     MessageBox.Show("Login successful! Role: " + role);
 
                     if (role == "Admin")
                     {
-                        AdminMenu admin = new AdminMenu();
+                        AdminMenu admin = new AdminMenu(userId);
                         admin.Show();
                         this.Hide();
                     }
                     else if (role == "Investigator")
                     {
-                        InvestigatorMenu investigator = new InvestigatorMenu();
+                        InvestigatorMenu investigator = new InvestigatorMenu(userId);
                         investigator.Show();
                         this.Hide();
                     }
                     else if (role == "Reporter")
                     {
-                        ReporterMenu reporter = new ReporterMenu();
+                        ReporterMenu reporter = new ReporterMenu(userId);
                         reporter.Show();
                         this.Hide();
                     }

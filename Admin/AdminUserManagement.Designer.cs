@@ -51,6 +51,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(526, 461);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // userDataGridView
             // 
@@ -61,6 +62,7 @@
             this.userDataGridView.RowTemplate.Height = 24;
             this.userDataGridView.Size = new System.Drawing.Size(520, 363);
             this.userDataGridView.TabIndex = 2;
+            this.userDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.userDataGridView_CellContentClick);
             // 
             // panel3
             // 
@@ -71,6 +73,7 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(520, 56);
             this.panel3.TabIndex = 1;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // refresh
             // 
@@ -118,6 +121,7 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(520, 24);
             this.panel2.TabIndex = 0;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // label1
             // 
@@ -129,6 +133,7 @@
             this.label1.Size = new System.Drawing.Size(51, 19);
             this.label1.TabIndex = 0;
             this.label1.Text = "Users";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // AdminUserManagement
             // 
