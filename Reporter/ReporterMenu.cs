@@ -51,12 +51,12 @@ namespace SpeakOut___Anti_Corruption_Reporting_System
 
         private void reporterReportStatusTracker_Click(object sender, EventArgs e)
         {
-            LoadFormInPanel(new Reporter.ReportStatusTracker());
+            LoadFormInPanel(new Reporter.ReportStatusTracker(currentUserId));
         }
 
         private void reporterMySubmittedEvidenceBTN_Click(object sender, EventArgs e)
         {
-            LoadFormInPanel(new Reporter.ReporterMySubmittedEvidence());
+            LoadFormInPanel(new Reporter.ReporterMySubmittedEvidence(currentUserId));
         }
 
         private void reporterCommentsBTN_Click(object sender, EventArgs e)
