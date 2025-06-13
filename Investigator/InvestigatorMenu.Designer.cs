@@ -36,7 +36,6 @@
             this.investigatorLogoutBTN = new System.Windows.Forms.Button();
             this.investigatorProgressHistoryBTN = new System.Windows.Forms.Button();
             this.investigatorCommentsBTN = new System.Windows.Forms.Button();
-            this.investigatorUploadEvidenceBTN = new System.Windows.Forms.Button();
             this.investigatorReviewReportBTN = new System.Windows.Forms.Button();
             this.investigatorMyAssignedReportsBTN = new System.Windows.Forms.Button();
             this.investigatorDashboardBTN = new System.Windows.Forms.Button();
@@ -106,7 +105,7 @@
             // 
             this.investigatorLogoutBTN.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.investigatorLogoutBTN.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.investigatorLogoutBTN.Location = new System.Drawing.Point(5, 378);
+            this.investigatorLogoutBTN.Location = new System.Drawing.Point(5, 335);
             this.investigatorLogoutBTN.Name = "investigatorLogoutBTN";
             this.investigatorLogoutBTN.Size = new System.Drawing.Size(191, 37);
             this.investigatorLogoutBTN.TabIndex = 10;
@@ -118,7 +117,7 @@
             // 
             this.investigatorProgressHistoryBTN.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.investigatorProgressHistoryBTN.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.investigatorProgressHistoryBTN.Location = new System.Drawing.Point(5, 335);
+            this.investigatorProgressHistoryBTN.Location = new System.Drawing.Point(5, 292);
             this.investigatorProgressHistoryBTN.Name = "investigatorProgressHistoryBTN";
             this.investigatorProgressHistoryBTN.Size = new System.Drawing.Size(191, 37);
             this.investigatorProgressHistoryBTN.TabIndex = 8;
@@ -130,25 +129,13 @@
             // 
             this.investigatorCommentsBTN.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.investigatorCommentsBTN.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.investigatorCommentsBTN.Location = new System.Drawing.Point(5, 292);
+            this.investigatorCommentsBTN.Location = new System.Drawing.Point(5, 249);
             this.investigatorCommentsBTN.Name = "investigatorCommentsBTN";
             this.investigatorCommentsBTN.Size = new System.Drawing.Size(191, 37);
             this.investigatorCommentsBTN.TabIndex = 7;
             this.investigatorCommentsBTN.Text = "💬 Comments";
             this.investigatorCommentsBTN.UseVisualStyleBackColor = true;
             this.investigatorCommentsBTN.Click += new System.EventHandler(this.investigatorCommentsBTN_Click);
-            // 
-            // investigatorUploadEvidenceBTN
-            // 
-            this.investigatorUploadEvidenceBTN.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.investigatorUploadEvidenceBTN.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.investigatorUploadEvidenceBTN.Location = new System.Drawing.Point(5, 249);
-            this.investigatorUploadEvidenceBTN.Name = "investigatorUploadEvidenceBTN";
-            this.investigatorUploadEvidenceBTN.Size = new System.Drawing.Size(191, 37);
-            this.investigatorUploadEvidenceBTN.TabIndex = 6;
-            this.investigatorUploadEvidenceBTN.Text = "📤 Upload Evidence";
-            this.investigatorUploadEvidenceBTN.UseVisualStyleBackColor = true;
-            this.investigatorUploadEvidenceBTN.Click += new System.EventHandler(this.investigatorUploadEvidenceBTN_Click);
             // 
             // investigatorReviewReportBTN
             // 
@@ -202,7 +189,6 @@
             this.panel2.Controls.Add(this.investigatorLogoutBTN);
             this.panel2.Controls.Add(this.investigatorProgressHistoryBTN);
             this.panel2.Controls.Add(this.investigatorCommentsBTN);
-            this.panel2.Controls.Add(this.investigatorUploadEvidenceBTN);
             this.panel2.Controls.Add(this.investigatorReviewReportBTN);
             this.panel2.Controls.Add(this.investigatorMyAssignedReportsBTN);
             this.panel2.Controls.Add(this.investigatorDashboardBTN);
@@ -245,7 +231,6 @@
         private System.Windows.Forms.Button investigatorLogoutBTN;
         private System.Windows.Forms.Button investigatorProgressHistoryBTN;
         private System.Windows.Forms.Button investigatorCommentsBTN;
-        private System.Windows.Forms.Button investigatorUploadEvidenceBTN;
         private System.Windows.Forms.Button investigatorReviewReportBTN;
         private System.Windows.Forms.Button investigatorMyAssignedReportsBTN;
         private System.Windows.Forms.Button investigatorDashboardBTN;

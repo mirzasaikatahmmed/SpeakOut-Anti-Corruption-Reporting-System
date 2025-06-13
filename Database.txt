@@ -1,0 +1,66 @@
+CREATE TABLE Users (
+    UserId INT IDENTITY(1,1) PRIMARY KEY,
+    Name NVARCHAR(100),
+    Email NVARCHAR(100) UNIQUE,
+    PasswordHash NVARCHAR(255),
+    Role NVARCHAR(20), -- 'Reporter', 'Admin', 'Investigator'
+    CreatedAt DATETIME DEFAULT GETDATE()
+);
+
+
+CREATE TABLE Reports (
+    ReportId INT IDENTITY(1,1) PRIMARY KEY,
+    Title NVARCHAR(200),
+    Description NVARCHAR(MAX),
+    TypeOfCorruption NVARCHAR(100),
+    Location NVARCHAR(200),
+    Date DATETIME,
+    Status NVARCHAR(50) DEFAULT 'Pending', -- 'Pending', 'Under Review', 'Resolved'
+    SubmittedBy INT NULL, -- NULL if anonymous
+    IsAnonymous BIT DEFAULT 0,
+    CreatedAt DATETIME DEFAULT GETDATE(),
+    FOREIGN KEY (SubmittedBy) REFERENCES Users(UserId)
+);
+
+
+CREATE TABLE Evidence (
+    EvidenceId INT IDENTITY(1,1) PRIMARY KEY,
+    ReportId INT,
+    FilePath NVARCHAR(300),
+    FileType NVARCHAR(50),
+    UploadedAt DATETIME DEFAULT GETDATE(),
+    FOREIGN KEY (ReportId) REFERENCES Reports(ReportId)
+);
+
+
+CREATE TABLE Comments (
+    CommentId INT IDENTITY(1,1) PRIMARY KEY,
+    ReportId INT,
+    UserId INT,
+    CommentText NVARCHAR(MAX),
+    Timestamp DATETIME DEFAULT GETDATE(),
+    FOREIGN KEY (ReportId) REFERENCES Reports(ReportId),
+    FOREIGN KEY (UserId) REFERENCES Users(UserId)
+);
+
+
+CREATE TABLE ReportAssignments (
+    AssignmentId INT IDENTITY(1,1) PRIMARY KEY,
+    ReportId INT,
+    InvestigatorId INT,
+    AssignedAt DATETIME DEFAULT GETDATE(),
+    FOREIGN KEY (ReportId) REFERENCES Reports(ReportId),
+    FOREIGN KEY (InvestigatorId) REFERENCES Users(UserId)
+);
+
+
+CREATE TABLE ReportHistory (
+    HistoryId INT IDENTITY(1,1) PRIMARY KEY,
+    ReportId INT,
+    Status NVARCHAR(50),
+    ChangedBy INT,
+    Note NVARCHAR(MAX),
+    Timestamp DATETIME DEFAULT GETDATE(),
+    FOREIGN KEY (ReportId) REFERENCES Reports(ReportId),
+    FOREIGN KEY (ChangedBy) REFERENCES Users(UserId)
+);

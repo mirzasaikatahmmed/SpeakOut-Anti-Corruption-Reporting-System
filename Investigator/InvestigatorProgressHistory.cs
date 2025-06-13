@@ -12,9 +12,16 @@ namespace SpeakOut___Anti_Corruption_Reporting_System.Investigator
 {
     public partial class InvestigatorProgressHistory : Form
     {
+        private int currentUserId;
         public InvestigatorProgressHistory()
         {
             InitializeComponent();
+        }
+
+        public InvestigatorProgressHistory(int userId)
+        {
+            InitializeComponent();
+            currentUserId = userId;
         }
     }
 }

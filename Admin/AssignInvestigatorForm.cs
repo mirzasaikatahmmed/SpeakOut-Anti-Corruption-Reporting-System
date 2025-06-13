@@ -131,5 +131,75 @@ namespace SpeakOut___Anti_Corruption_Reporting_System.Admin
                 this.Close();
             }
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void reportID_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dateOfSubmission_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void reportTitleTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void typeOfCorruptionTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void locationTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void reportDescriptionRichTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void investigatorsListComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

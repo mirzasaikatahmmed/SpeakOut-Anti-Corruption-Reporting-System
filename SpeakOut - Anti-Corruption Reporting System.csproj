@@ -152,12 +152,6 @@
     <Compile Include="Investigator\InvestigatorReportReview.Designer.cs">
       <DependentUpon>InvestigatorReportReview.cs</DependentUpon>
     </Compile>
-    <Compile Include="Investigator\InvestigatorUploadEvidence.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Investigator\InvestigatorUploadEvidence.Designer.cs">
-      <DependentUpon>InvestigatorUploadEvidence.cs</DependentUpon>
-    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -269,9 +263,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Investigator\InvestigatorReportReview.resx">
       <DependentUpon>InvestigatorReportReview.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Investigator\InvestigatorUploadEvidence.resx">
-      <DependentUpon>InvestigatorUploadEvidence.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
