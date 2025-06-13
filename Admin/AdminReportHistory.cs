@@ -39,5 +39,10 @@ namespace SpeakOut___Anti_Corruption_Reporting_System.Admin
                 reportHistoryDataGridView.DataSource = dt;
             }
         }
+
+        private void refresh_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

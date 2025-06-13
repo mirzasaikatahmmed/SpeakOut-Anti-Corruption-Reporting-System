@@ -22,6 +22,7 @@ namespace SpeakOut___Anti_Corruption_Reporting_System
         {
             InitializeComponent();
             currentUserId = userId;
+            LoadFormInPanel(new Admin.AdminDashboard());
         }
 
         private void LoadFormInPanel(Form form)

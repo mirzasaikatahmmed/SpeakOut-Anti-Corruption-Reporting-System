@@ -79,6 +79,7 @@
             this.refresh.TabIndex = 2;
             this.refresh.Text = "Refresh";
             this.refresh.UseVisualStyleBackColor = false;
+            this.refresh.Click += new System.EventHandler(this.refresh_Click);
             // 
             // panel2
             // 
