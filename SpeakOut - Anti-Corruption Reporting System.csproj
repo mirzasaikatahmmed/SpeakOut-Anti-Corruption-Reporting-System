@@ -110,6 +110,12 @@
     <Compile Include="Admin\AdminViewAllReports.Designer.cs">
       <DependentUpon>AdminViewAllReports.cs</DependentUpon>
     </Compile>
+    <Compile Include="Admin\AssignInvestigatorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\AssignInvestigatorForm.Designer.cs">
+      <DependentUpon>AssignInvestigatorForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Investigator\InvestigatorComments.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -242,6 +248,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\AdminViewAllReports.resx">
       <DependentUpon>AdminViewAllReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\AssignInvestigatorForm.resx">
+      <DependentUpon>AssignInvestigatorForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Investigator\InvestigatorComments.resx">
       <DependentUpon>InvestigatorComments.cs</DependentUpon>
