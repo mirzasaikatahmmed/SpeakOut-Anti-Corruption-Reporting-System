@@ -111,7 +111,6 @@ namespace SpeakOut___Anti_Corruption_Reporting_System.Reporter
 
                     int reportId = (int)cmd.ExecuteScalar();
 
-                    // Save file
                     if (!string.IsNullOrEmpty(selectedFilePath))
                     {
                         string destFolder = Path.Combine(Application.StartupPath, "EvidenceFiles");

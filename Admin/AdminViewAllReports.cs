@@ -44,16 +44,6 @@ namespace SpeakOut___Anti_Corruption_Reporting_System.Admin
                 DataTable dt = new DataTable();
                 sda.Fill(dt);
                 reportsDataGridView.DataSource = dt;
-
-
-                reportsDataGridView.Columns["ReportId"].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-                reportsDataGridView.Columns["Title"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-                reportsDataGridView.Columns["SubmittedBy"].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-                reportsDataGridView.Columns["TypeOfCorruption"].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-                reportsDataGridView.Columns["Location"].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-                reportsDataGridView.Columns["Date"].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-                reportsDataGridView.Columns["Status"].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-                reportsDataGridView.Columns["AssignedTo"].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
             }
         }
 

@@ -42,7 +42,7 @@ namespace SpeakOut___Anti_Corruption_Reporting_System.Admin
 
         private void refresh_Click(object sender, EventArgs e)
         {
-
+            LoadAllReportHistory();
         }
     }
 }

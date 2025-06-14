@@ -37,7 +37,7 @@ namespace SpeakOut___Anti_Corruption_Reporting_System.Admin
                 SqlCommand cmd3 = new SqlCommand("SELECT COUNT(*) FROM Reports WHERE Status = 'Assigned'", con);
                 assignedReports.Text = cmd3.ExecuteScalar().ToString();
 
-                SqlCommand cmd4 = new SqlCommand("SELECT COUNT(*) FROM Users", con);
+                SqlCommand cmd4 = new SqlCommand("SELECT COUNT(*) FROM Users WHERE Role = 'Reporter'", con);
                 totalUsers.Text = cmd4.ExecuteScalar().ToString();
 
                 SqlCommand cmd5 = new SqlCommand("SELECT COUNT(*) FROM Users WHERE Role = 'Investigator'", con);
