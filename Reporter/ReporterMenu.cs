@@ -61,7 +61,7 @@ namespace SpeakOut___Anti_Corruption_Reporting_System
 
         private void reporterCommentsBTN_Click(object sender, EventArgs e)
         {
-            LoadFormInPanel(new Reporter.ReporterComments());
+            LoadFormInPanel(new Reporter.ReporterComments(currentUserId));
         }
 
         private void reporterLogoutBTN_Click(object sender, EventArgs e)
