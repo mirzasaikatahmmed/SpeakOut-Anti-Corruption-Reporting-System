@@ -52,6 +52,7 @@ namespace SpeakOut___Anti_Corruption_Reporting_System
 
         private void ACLOSEBTN_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("Thank you for using SpeakOut - Anti Corruption Reporting System. Goodbye!", "Goodbye", MessageBoxButtons.OK, MessageBoxIcon.Information);
             Application.Exit();
         }
 
@@ -85,11 +86,6 @@ namespace SpeakOut___Anti_Corruption_Reporting_System
         private void adminReportHistoryBTN_Click(object sender, EventArgs e)
         {
             LoadFormInPanel(new Admin.AdminReportHistory());
-        }
-
-        private void adminNotificationLogBTN_Click(object sender, EventArgs e)
-        {
-            LoadFormInPanel(new Admin.AdminNotificationLog());
         }
     }
 }

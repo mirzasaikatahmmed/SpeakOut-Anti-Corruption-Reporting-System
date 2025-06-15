@@ -153,5 +153,10 @@ namespace SpeakOut___Anti_Corruption_Reporting_System.Reporter
             if (submitNone.Checked)
                 submitAnonymously.Checked = false;
         }
+
+        private void backPictureBoxBTN_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

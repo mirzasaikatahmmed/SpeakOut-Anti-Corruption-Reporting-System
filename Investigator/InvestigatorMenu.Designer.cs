@@ -71,6 +71,7 @@
             this.ACLOSEBTN.TabIndex = 4;
             this.ACLOSEBTN.Text = "X";
             this.ACLOSEBTN.UseVisualStyleBackColor = true;
+            this.ACLOSEBTN.Click += new System.EventHandler(this.ACLOSEBTN_Click);
             // 
             // label1
             // 

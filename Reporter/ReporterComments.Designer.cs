@@ -89,9 +89,9 @@
             this.reportIDtextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.reportIDtextBox.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.reportIDtextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.reportIDtextBox.Location = new System.Drawing.Point(108, 16);
+            this.reportIDtextBox.Location = new System.Drawing.Point(120, 16);
             this.reportIDtextBox.Name = "reportIDtextBox";
-            this.reportIDtextBox.Size = new System.Drawing.Size(297, 25);
+            this.reportIDtextBox.Size = new System.Drawing.Size(285, 25);
             this.reportIDtextBox.TabIndex = 7;
             // 
             // search

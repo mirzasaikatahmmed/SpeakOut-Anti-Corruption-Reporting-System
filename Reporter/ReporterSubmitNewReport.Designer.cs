@@ -304,6 +304,7 @@
             this.backPictureBoxBTN.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.backPictureBoxBTN.TabIndex = 9;
             this.backPictureBoxBTN.TabStop = false;
+            this.backPictureBoxBTN.Click += new System.EventHandler(this.backPictureBoxBTN_Click);
             // 
             // label1
             // 
@@ -325,6 +326,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ReporterSubmitNewReport";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ReporterSubmitNewReport";
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);

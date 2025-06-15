@@ -166,9 +166,9 @@
             this.submittedByTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.submittedByTextBox.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.submittedByTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.submittedByTextBox.Location = new System.Drawing.Point(366, 219);
+            this.submittedByTextBox.Location = new System.Drawing.Point(367, 219);
             this.submittedByTextBox.Name = "submittedByTextBox";
-            this.submittedByTextBox.Size = new System.Drawing.Size(145, 25);
+            this.submittedByTextBox.Size = new System.Drawing.Size(144, 25);
             this.submittedByTextBox.TabIndex = 39;
             // 
             // label4
@@ -209,9 +209,9 @@
             this.reportIDtextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.reportIDtextBox.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.reportIDtextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.reportIDtextBox.Location = new System.Drawing.Point(98, 16);
+            this.reportIDtextBox.Location = new System.Drawing.Point(115, 16);
             this.reportIDtextBox.Name = "reportIDtextBox";
-            this.reportIDtextBox.Size = new System.Drawing.Size(307, 25);
+            this.reportIDtextBox.Size = new System.Drawing.Size(290, 25);
             this.reportIDtextBox.TabIndex = 7;
             this.reportIDtextBox.TextChanged += new System.EventHandler(this.reportIDtextBox_TextChanged);
             // 
@@ -295,9 +295,9 @@
             this.locationTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.locationTextBox.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.locationTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.locationTextBox.Location = new System.Drawing.Point(409, 177);
+            this.locationTextBox.Location = new System.Drawing.Point(412, 177);
             this.locationTextBox.Name = "locationTextBox";
-            this.locationTextBox.Size = new System.Drawing.Size(101, 25);
+            this.locationTextBox.Size = new System.Drawing.Size(98, 25);
             this.locationTextBox.TabIndex = 33;
             // 
             // reportID
@@ -305,7 +305,7 @@
             this.reportID.AutoSize = true;
             this.reportID.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.reportID.ForeColor = System.Drawing.Color.Black;
-            this.reportID.Location = new System.Drawing.Point(96, 100);
+            this.reportID.Location = new System.Drawing.Point(110, 100);
             this.reportID.Name = "reportID";
             this.reportID.Size = new System.Drawing.Size(29, 19);
             this.reportID.TabIndex = 25;
@@ -328,9 +328,9 @@
             this.reportTitleTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.reportTitleTextBox.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.reportTitleTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.reportTitleTextBox.Location = new System.Drawing.Point(114, 129);
+            this.reportTitleTextBox.Location = new System.Drawing.Point(118, 129);
             this.reportTitleTextBox.Name = "reportTitleTextBox";
-            this.reportTitleTextBox.Size = new System.Drawing.Size(397, 25);
+            this.reportTitleTextBox.Size = new System.Drawing.Size(393, 25);
             this.reportTitleTextBox.TabIndex = 27;
             this.reportTitleTextBox.TextChanged += new System.EventHandler(this.reportTitleTextBox_TextChanged);
             // 
@@ -340,9 +340,9 @@
             this.typeOfCorruptionTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.typeOfCorruptionTextBox.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.typeOfCorruptionTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.typeOfCorruptionTextBox.Location = new System.Drawing.Point(170, 177);
+            this.typeOfCorruptionTextBox.Location = new System.Drawing.Point(180, 177);
             this.typeOfCorruptionTextBox.Name = "typeOfCorruptionTextBox";
-            this.typeOfCorruptionTextBox.Size = new System.Drawing.Size(145, 25);
+            this.typeOfCorruptionTextBox.Size = new System.Drawing.Size(135, 25);
             this.typeOfCorruptionTextBox.TabIndex = 31;
             // 
             // label6
@@ -372,7 +372,7 @@
             this.dateOfSubmission.AutoSize = true;
             this.dateOfSubmission.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateOfSubmission.ForeColor = System.Drawing.Color.Black;
-            this.dateOfSubmission.Location = new System.Drawing.Point(402, 100);
+            this.dateOfSubmission.Location = new System.Drawing.Point(408, 100);
             this.dateOfSubmission.Name = "dateOfSubmission";
             this.dateOfSubmission.Size = new System.Drawing.Size(105, 19);
             this.dateOfSubmission.TabIndex = 29;

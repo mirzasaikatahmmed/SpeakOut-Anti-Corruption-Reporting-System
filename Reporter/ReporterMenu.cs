@@ -22,6 +22,7 @@ namespace SpeakOut___Anti_Corruption_Reporting_System
         {
             InitializeComponent();
             currentUserId = userId;
+            LoadFormInPanel(new Reporter.ReporterDashboard(currentUserId));
         }
 
         private void LoadFormInPanel(Form form)
@@ -36,7 +37,7 @@ namespace SpeakOut___Anti_Corruption_Reporting_System
 
         private void reporterDashboardBTN_Click(object sender, EventArgs e)
         {
-            LoadFormInPanel(new Reporter.ReporterDashboard());
+            LoadFormInPanel(new Reporter.ReporterDashboard(currentUserId));
         }
 
         private void reporterSubmitNewReportBTN_Click(object sender, EventArgs e)
@@ -74,6 +75,12 @@ namespace SpeakOut___Anti_Corruption_Reporting_System
                 loginForm.Show();
                 this.Close();
             }
+        }
+
+        private void ACLOSEBTN_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Thank you for using SpeakOut - Anti Corruption Reporting System. Goodbye!", "Goodbye", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            Application.Exit();
         }
     }
 }

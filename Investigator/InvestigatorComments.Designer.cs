@@ -36,12 +36,12 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.newCommentsRichTextBox = new System.Windows.Forms.RichTextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.previousCommentsDataGridView = new System.Windows.Forms.DataGridView();
+            this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.reportTitleTextBox = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.previousCommentsDataGridView = new System.Windows.Forms.DataGridView();
-            this.label4 = new System.Windows.Forms.Label();
-            this.newCommentsRichTextBox = new System.Windows.Forms.RichTextBox();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -89,9 +89,9 @@
             this.reportIDtextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.reportIDtextBox.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.reportIDtextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.reportIDtextBox.Location = new System.Drawing.Point(108, 16);
+            this.reportIDtextBox.Location = new System.Drawing.Point(120, 16);
             this.reportIDtextBox.Name = "reportIDtextBox";
-            this.reportIDtextBox.Size = new System.Drawing.Size(297, 25);
+            this.reportIDtextBox.Size = new System.Drawing.Size(285, 25);
             this.reportIDtextBox.TabIndex = 7;
             // 
             // search
@@ -142,6 +142,46 @@
             this.panel1.Size = new System.Drawing.Size(526, 461);
             this.panel1.TabIndex = 4;
             // 
+            // newCommentsRichTextBox
+            // 
+            this.newCommentsRichTextBox.Location = new System.Drawing.Point(10, 303);
+            this.newCommentsRichTextBox.Name = "newCommentsRichTextBox";
+            this.newCommentsRichTextBox.Size = new System.Drawing.Size(501, 92);
+            this.newCommentsRichTextBox.TabIndex = 47;
+            this.newCommentsRichTextBox.Text = "";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.label4.Location = new System.Drawing.Point(6, 272);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(138, 19);
+            this.label4.TabIndex = 46;
+            this.label4.Text = "New Comment:";
+            // 
+            // previousCommentsDataGridView
+            // 
+            this.previousCommentsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.previousCommentsDataGridView.Location = new System.Drawing.Point(10, 172);
+            this.previousCommentsDataGridView.Name = "previousCommentsDataGridView";
+            this.previousCommentsDataGridView.RowHeadersWidth = 51;
+            this.previousCommentsDataGridView.RowTemplate.Height = 24;
+            this.previousCommentsDataGridView.Size = new System.Drawing.Size(501, 86);
+            this.previousCommentsDataGridView.TabIndex = 45;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.label3.Location = new System.Drawing.Point(6, 150);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(182, 19);
+            this.label3.TabIndex = 44;
+            this.label3.Text = "Previous Comments: ";
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -163,46 +203,6 @@
             this.reportTitleTextBox.Name = "reportTitleTextBox";
             this.reportTitleTextBox.Size = new System.Drawing.Size(388, 25);
             this.reportTitleTextBox.TabIndex = 29;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.label3.Location = new System.Drawing.Point(6, 150);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(182, 19);
-            this.label3.TabIndex = 44;
-            this.label3.Text = "Previous Comments: ";
-            // 
-            // previousCommentsDataGridView
-            // 
-            this.previousCommentsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.previousCommentsDataGridView.Location = new System.Drawing.Point(10, 172);
-            this.previousCommentsDataGridView.Name = "previousCommentsDataGridView";
-            this.previousCommentsDataGridView.RowHeadersWidth = 51;
-            this.previousCommentsDataGridView.RowTemplate.Height = 24;
-            this.previousCommentsDataGridView.Size = new System.Drawing.Size(501, 86);
-            this.previousCommentsDataGridView.TabIndex = 45;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.label4.Location = new System.Drawing.Point(6, 272);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(138, 19);
-            this.label4.TabIndex = 46;
-            this.label4.Text = "New Comment:";
-            // 
-            // newCommentsRichTextBox
-            // 
-            this.newCommentsRichTextBox.Location = new System.Drawing.Point(10, 303);
-            this.newCommentsRichTextBox.Name = "newCommentsRichTextBox";
-            this.newCommentsRichTextBox.Size = new System.Drawing.Size(501, 92);
-            this.newCommentsRichTextBox.TabIndex = 47;
-            this.newCommentsRichTextBox.Text = "";
             // 
             // InvestigatorComments
             // 

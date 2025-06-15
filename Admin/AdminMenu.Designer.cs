@@ -35,7 +35,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.adminLogoutBTN = new System.Windows.Forms.Button();
             this.adminUserManagementBTN = new System.Windows.Forms.Button();
-            this.adminNotificationLogBTN = new System.Windows.Forms.Button();
             this.adminReportHistoryBTN = new System.Windows.Forms.Button();
             this.adminManageInvestigatorsBTN = new System.Windows.Forms.Button();
             this.assignReportBTN = new System.Windows.Forms.Button();
@@ -101,7 +100,6 @@
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
             this.panel2.Controls.Add(this.adminLogoutBTN);
             this.panel2.Controls.Add(this.adminUserManagementBTN);
-            this.panel2.Controls.Add(this.adminNotificationLogBTN);
             this.panel2.Controls.Add(this.adminReportHistoryBTN);
             this.panel2.Controls.Add(this.adminManageInvestigatorsBTN);
             this.panel2.Controls.Add(this.assignReportBTN);
@@ -119,7 +117,7 @@
             // 
             this.adminLogoutBTN.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.adminLogoutBTN.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.adminLogoutBTN.Location = new System.Drawing.Point(12, 400);
+            this.adminLogoutBTN.Location = new System.Drawing.Point(12, 357);
             this.adminLogoutBTN.Name = "adminLogoutBTN";
             this.adminLogoutBTN.Size = new System.Drawing.Size(182, 37);
             this.adminLogoutBTN.TabIndex = 10;
@@ -131,25 +129,13 @@
             // 
             this.adminUserManagementBTN.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.adminUserManagementBTN.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.adminUserManagementBTN.Location = new System.Drawing.Point(12, 357);
+            this.adminUserManagementBTN.Location = new System.Drawing.Point(12, 314);
             this.adminUserManagementBTN.Name = "adminUserManagementBTN";
             this.adminUserManagementBTN.Size = new System.Drawing.Size(182, 37);
             this.adminUserManagementBTN.TabIndex = 9;
             this.adminUserManagementBTN.Text = "👤 User";
             this.adminUserManagementBTN.UseVisualStyleBackColor = true;
             this.adminUserManagementBTN.Click += new System.EventHandler(this.adminUserManagementBTN_Click);
-            // 
-            // adminNotificationLogBTN
-            // 
-            this.adminNotificationLogBTN.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.adminNotificationLogBTN.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.adminNotificationLogBTN.Location = new System.Drawing.Point(12, 314);
-            this.adminNotificationLogBTN.Name = "adminNotificationLogBTN";
-            this.adminNotificationLogBTN.Size = new System.Drawing.Size(182, 37);
-            this.adminNotificationLogBTN.TabIndex = 8;
-            this.adminNotificationLogBTN.Text = "📧 Notifications Log";
-            this.adminNotificationLogBTN.UseVisualStyleBackColor = true;
-            this.adminNotificationLogBTN.Click += new System.EventHandler(this.adminNotificationLogBTN_Click);
             // 
             // adminReportHistoryBTN
             // 
@@ -264,7 +250,6 @@
         private System.Windows.Forms.Button adminAllReportBTN;
         private System.Windows.Forms.Button adminLogoutBTN;
         private System.Windows.Forms.Button adminUserManagementBTN;
-        private System.Windows.Forms.Button adminNotificationLogBTN;
         private System.Windows.Forms.Button adminReportHistoryBTN;
         private System.Windows.Forms.Button adminManageInvestigatorsBTN;
         private System.Windows.Forms.Button assignReportBTN;

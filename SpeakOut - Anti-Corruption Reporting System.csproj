@@ -86,12 +86,6 @@
     <Compile Include="Admin\AdminMenu.Designer.cs">
       <DependentUpon>AdminMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\AdminNotificationLog.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Admin\AdminNotificationLog.Designer.cs">
-      <DependentUpon>AdminNotificationLog.cs</DependentUpon>
-    </Compile>
     <Compile Include="Admin\AdminReportHistory.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -236,9 +230,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\AdminMenu.resx">
       <DependentUpon>AdminMenu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Admin\AdminNotificationLog.resx">
-      <DependentUpon>AdminNotificationLog.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\AdminReportHistory.resx">
       <DependentUpon>AdminReportHistory.cs</DependentUpon>
