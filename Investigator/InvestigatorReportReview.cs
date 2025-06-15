@@ -29,7 +29,21 @@ namespace SpeakOut___Anti_Corruption_Reporting_System.Investigator
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Attachment viewer not implemented yet.");
+            if (string.IsNullOrWhiteSpace(reportID.Text) || reportID.Text == "00")
+            {
+                MessageBox.Show("Please load a valid Report ID before viewing attachments.");
+                return;
+            }
+
+            if (int.TryParse(reportIDtextBox.Text, out int reportId))
+            {
+                InvestigatorViewAttachments attachmentsForm = new InvestigatorViewAttachments(reportId);
+                attachmentsForm.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Invalid Report ID format.");
+            }
         }
 
         private void search_Click(object sender, EventArgs e)
